@@ -57,6 +57,8 @@ while True:
 while True:
 	enter = input("""Do you really wish to quit the game?""")
 	if enter == "no":
-		return to game
+		#return to game
         if enter == "yes":
-		quit()
+		sys.exit
+		
+   
