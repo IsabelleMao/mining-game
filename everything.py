@@ -56,7 +56,7 @@ while True:
   #Exit the game. 
 while True:
 	enter = input("""Do you really wish to quit the game?""")
-	if enter == "no"
-	return to game
-        if enter == "yes"
-	quit()
+	if enter == "no":
+		return to game
+        if enter == "yes":
+		quit()
