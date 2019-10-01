@@ -12,10 +12,10 @@ while True:
 while True:
   #Gets the name of the user. If empty space is returned asks for a name
   username = input("""Choose and type a name for your journey!\n""")
-  if username == "":
+  if username.strip() == "":
     print("""Please enter a name!""")
   else:
-    print("Welcome ",username,"!")
+    print("Welcome {}!".format(username))
     break
 
   
@@ -55,10 +55,10 @@ while True:
 
   #Exit the game. 
 while True:
-	enter = input("""Do you really wish to quit the game?""")
-	if enter == "no":
+	enter = input("""Do you really wish to quit the game?\n""")
+	if enter == "no" or enter[0].lower == "n":
 		#return to game
-        if enter == "yes":
+        if enter == "yes" or enter[0].lower == "y":
 		sys.exit
 		
    
